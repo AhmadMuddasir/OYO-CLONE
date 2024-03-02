@@ -36,7 +36,7 @@ const SingleHotel = ({ hotel }) => {
           <h3 className="text-3xl font-bold">{hotel?.name}</h3>
           <p className=" text-lg">{hotel?.description}</p>
           <button className=" h-10 rounded-lg  font-extrabold text-2xl  my-4">
-            Price: &#8377;<span className="ml-2">{hotel?.price}</span>
+            Price: ₹ <span className="ml-2">{hotel?.price}</span>
           </button>
           <p className="text-3xl font-bold my-2">Facilities</p>
           <ul className="flex ">

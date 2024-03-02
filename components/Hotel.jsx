@@ -67,7 +67,7 @@ const Hotel = ({e}) => {
           </div>
           <div className="flex items-center">
             <button className="w-60 h-14 rounded-lg bg-blue-400 font-bold text-lg hover:bg-blue-500">
-            Price: &#8377; {e.price}
+            Price:₹{e.price}
             </button>
             <Link
               href={`/hotels/${e?._id}`}

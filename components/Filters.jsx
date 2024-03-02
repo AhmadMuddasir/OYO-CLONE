@@ -35,7 +35,7 @@ const Filters = ({
 
   useEffect(() => {
     fetchFacilities();
-  }, []);
+  },[]);
 
   return (
     <>
@@ -52,7 +52,7 @@ const Filters = ({
           onChange={(e) => setPrice(e.target.value)}
           defaultValue={price ? price : 0}
         />
-        <span className=" ml-10">&#8377; {price ? price : ""}</span>
+        <span className=" ml-10"> ₹ {price ? price : ""}</span>
         <div>
           <button
             className=" w-40 h-10 bg-green-400 hover:bg-green-500  cursor-pointer my-3"

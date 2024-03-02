@@ -45,7 +45,7 @@ const Header5 = () => {
         <div className="grid grid-cols-6 w-full m-auto">
           {countries.map((e) => (
           
-              <li className="font-medium text-lg col-span-3 m-4 w-40 ">{e}</li>
+              <li key={e} className="font-medium text-lg col-span-3 m-4 w-40 ">{e}</li>
             
           ))}
         </div>

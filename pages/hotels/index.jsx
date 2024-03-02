@@ -20,7 +20,7 @@ const Hotels = ({ hotels }) => {
     if(checkedList){
       handleCheckList();
     }
-    console.log(checkedList);
+    
 },[checkedList])
 
   const handlePrice = async () => {
