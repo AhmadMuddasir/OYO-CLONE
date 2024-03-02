@@ -57,6 +57,7 @@ const Filters = ({
           <button
             className=" w-40 h-10 bg-green-400 hover:bg-green-500  cursor-pointer my-3"
             onClick={handlePrice}
+            
           >
             Search
           </button>

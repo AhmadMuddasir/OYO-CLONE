@@ -24,6 +24,7 @@ const Hotels = ({ hotels }) => {
 },[checkedList])
 
   const handlePrice = async () => {
+    
     const {data} = await axios.get(`/api/facilities/range?price=${price}`);
     if (data?.hotels) {
       setList(data.hotels);
