@@ -20,7 +20,6 @@ const Home = () => {
         <div className="my-14">
           <Image
             src={"/banner1.avif"}
-            priority={true}
             alt="img"
             width={100}
             height={100}
@@ -30,17 +29,16 @@ const Home = () => {
         <div className="mb-14">
           <Image
             src={"/banner2.avif"}
-            priority={true}
             width={100}
             alt="img"
             height={100}
             className="w-full h-auto my-10"
           />
         </div>
-        <Header4/>
-        <Header5/>
+        <Header4 />
+        <Header5 />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

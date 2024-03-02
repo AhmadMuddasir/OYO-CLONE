@@ -47,6 +47,7 @@ const Login = () => {
       }
     } catch (error) {
       console.log(error);
+      alert("email or password is uncorrect");
     }
   };
 
