@@ -23,14 +23,19 @@ const Filters = ({
   };
 
   const handleCheckList = async (e) => {
-    let newList = [];
-    if (e.target.checked) {
-      newList.push(e.target.value);
+    try {
+      
+      let newList = [];
+      if (e.target.checked) {
+        newList.push(e.target.value);
+        setcheckedList(newList);
+        return;
+      }
+      newList = newList.filter((i) => i !== e.target.value);
       setcheckedList(newList);
-      return;
+    } catch (error) {
+      console.log(error)
     }
-    newList = newList.filter((i) => i !== e.target.value);
-    setcheckedList(newList);
   };
 
   useEffect(() => {
