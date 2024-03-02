@@ -1,4 +1,3 @@
-'use client'
 import Filters from "@/components/Filters";
 import Header1 from "@/components/Header1";
 import Hotel from "@/components/Hotel";
@@ -10,24 +9,22 @@ const Hotels = ({ hotels }) => {
   const [list, setList] = useState([]);
   const [checkedList, setcheckedList] = useState([]);
 
-  const handleCheckList = async()=>{
-    try {
-      
-      const {data} = await axios.get(`/api/facilities/search?val=${checkedList}`);
-      if(data?.hotels){
-       setList(data.hotels);
+  useEffect(() => {
+    const handleCheckList = async () => { // Define function inside useEffect
+      try {
+        const { data } = await axios.get(`/api/facilities/search?val=${checkedList}`);
+        if (data?.hotels) {
+          setList(data.hotels);
+        }
+      } catch (error) {
+        console.log(error);
       }
-    } catch (error) {
-      console.log(error)
-    }
-  };
-
-  useEffect(()=>{
-    if(checkedList){
+    };
+  
+    if (checkedList) {
       handleCheckList();
     }
-    
-},[checkedList])
+  }, [checkedList]);
 
   const handlePrice = async () => {
     try {    

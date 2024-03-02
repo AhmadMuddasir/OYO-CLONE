@@ -7,6 +7,7 @@ const Filters = ({
   price,
   setPrice,
   handlePrice,
+  checkedList,
   setcheckedList,
 }) => {
   const [list, setList] = useState([]);
@@ -40,7 +41,7 @@ const Filters = ({
 
   useEffect(() => {
     fetchFacilities();
-  },[]);
+  },[checkedList]);
 
   return (
     <>
