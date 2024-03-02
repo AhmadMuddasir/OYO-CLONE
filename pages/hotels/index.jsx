@@ -1,11 +1,11 @@
 import Filters from "@/components/Filters";
 import Header1 from "@/components/Header1";
 import Hotel from "@/components/Hotel";
-import { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Hotels = ({ hotels }) => {
-  const [price, setPrice] = useState(2500);
+  const [price, setPrice] = useState(3500);
   const [list, setList] = useState([]);
   const [checkedList, setcheckedList] = useState([]);
 
@@ -14,7 +14,7 @@ const Hotels = ({ hotels }) => {
     if(data?.hotels){
      setList(data.hotels);
     }
-  }
+  };
 
   useEffect(()=>{
     if(checkedList){
