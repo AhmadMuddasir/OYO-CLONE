@@ -3,12 +3,8 @@ import Image from "next/image";
 
 const Block = ({images,title,para}) => {
 
-console.log(images)
   return (
     <div className="border-r hover:text-gray-600 border-gray-300 w-48 h-full flex items-center px-2">
-      
-
-
             <Image
               src={images}
               alt="demo"
