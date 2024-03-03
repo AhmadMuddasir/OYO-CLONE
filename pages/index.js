@@ -1,7 +1,6 @@
 import Header2 from "@/components/Header2";
 import Header1 from "../components/Header1";
 import Header3 from "@/components/Header3";
-import Image from "next/image";
 import Head from "next/head";
 import Header4 from "@/components/Header4";
 import Footer from "@/components/Footer";
@@ -18,20 +17,16 @@ const Home = () => {
       <Header3 />
       <div className="mx-20">
         <div className="my-14">
-          <Image
+          <img
             src={"/banner1.avif"}
             alt="img"
-            width={100}
-            height={100}
             className="w-full h-auto my-10"
           />
         </div>
         <div className="mb-14">
-          <Image
+          <img
             src={"/banner2.avif"}
-            width={100}
             alt="img"
-            height={100}
             className="w-full h-auto my-10"
           />
         </div>
