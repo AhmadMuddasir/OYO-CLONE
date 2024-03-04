@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const Header5 = () => {
@@ -12,10 +11,8 @@ const Header5 = () => {
   ];
   return (
     <div className="flex my-4">
-      <Image
+      <img
         src={"/map.avif"}
-        width={100}
-        height={100}
         alt="img"
         className="w-1/2 mx-8 "
       />

@@ -3,15 +3,21 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const Hotel = ({e}) => {
+
+  const [selectedImage,setSelectedImage] = useState(e?.banner)
+
+  const changeImage = (e)=>{
+    setSelectedImage(e)
+  }
   
   return (
     <div className="p-4 mb-2 border-2 bg-gray-200   h-100 w-full">
       <div className="flex items-center">
         <Image
-          src={e?.banner}
-          width={200}
+          src={selectedImage}
+          width={800}
           alt="hotel"
-          height={200}
+          height={800}
           className="w-96 h-large-box mr-3 mb-2"
         />
         <div className="grid grid-rows-3 ">
@@ -22,10 +28,11 @@ const Hotel = ({e}) => {
                 <Image
                 key = {e}
                   src={e}
-                  width={200}
+                  width={800}
                   alt="hotel"
-                  height={200}
-                  className="w-32  mb-2 "
+                  height={800}
+                  className="w-32  mb-2"
+                  onClick={()=>{changeImage(e)}}
                 />
               )
             }) : ""
