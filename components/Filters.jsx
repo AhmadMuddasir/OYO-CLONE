@@ -11,7 +11,7 @@ const Filters = ({
   setcheckedList,
 }) => {
   const [list, setList] = useState([]);
-
+// fetching the api facilities in this function
   const fetchFacilities = async () => {
     try {
       const { data } = await axios.get(`/api/facilities`);
