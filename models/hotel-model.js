@@ -1,6 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 
-
+// mongo db database schema
 const hotelSchema = new mongoose.Schema({
      name: {
           type: String,
