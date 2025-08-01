@@ -43,6 +43,9 @@ const Hotel = ({e}) => {
           <h2 className="font-bold text-2xl line-clamp-1">
             {e.name}
           </h2>
+          <h1 className="font-bold text-xl line-clamp-1">
+            city:{e.location}
+          </h1>
           <p className="text-justify my-5 text-lg">
             {e.description}
           </p>
